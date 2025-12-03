@@ -34,31 +34,31 @@ This repository contains my implementation of a **Bayesian Extreme Value Theory 
 ## 📈 Model Diagnostics & Visualizations
 
 ### **1. Distribution of Losses**
-![Distribution of Losses](distribution_of_losses.png)
+![Distribution of Losses](Distribution of Losses.png)
 *The empirical distribution of S&P 500 daily losses (1986-2025) shows right-skewed behavior with a heavy tail, indicating frequent moderate losses and rare extreme events.*
 
 ### **2. Distribution Fit (GPD vs Empirical)**
-![Distribution Fit](distribution_fit.png)
+![Distribution Fit](Distribution Fit.png)
 *Comparison between empirical exceedances (blue) and fitted Generalized Pareto Distribution (orange). The GPD closely matches the empirical distribution, especially in the moderate tail region.*
 
 ### **3. QQ Plot - GPD Fit Assessment**
-![QQ Plot](qq_plot.png)
+![QQ Plot](QQ Plot.png)
 *Quantile-Quantile plot comparing empirical quantiles against theoretical GPD quantiles. Points following the diagonal line indicate good fit. The slight upward curvature in the extreme tail suggests the model may slightly underestimate the heaviest losses.*
 
 ### **4. Tail Probability Comparison**
-![Tail Probability Comparison](tail_probability_comparison.png)
+![Tail Probability Comparison](Tail Probability Comparision.png)
 *Log-scale comparison of tail probabilities. The empirical survival function (blue) and GPD model (orange) show excellent agreement for probabilities > 0.01, with slight divergence in the extreme tail (probabilities < 0.001).*
 
 ### **5. Tail Plot (Log Scale)**
-![Tail Plot](tail_plot.png)
+![Tail Plot](Tail Plot (Log Scale).png)
 *Log-scale visualization of the tail region, highlighting the power-law decay characteristic of heavy-tailed distributions. The linear trend in the log-log plot confirms the GPD's appropriateness.*
 
 ### **6. Return Level Plot**
-![Return Level Plot](return_level_plot.png)
+![Return Level Plot](Return Level Plot.png)
 *Return levels for different return periods (10 to 1000 days). The smooth extrapolation beyond observed data provides confidence in extreme quantile estimates, with 1000-day return level (~99.9% VaR) around 9.7%.*
 
 ### **7. Mean Excess Plot for Threshold Selection**
-![Mean Excess Plot](mean_excess_plot.png)
+![Mean Excess Plot](Mean Excess Plot for Threshold Section.png)
 *Mean excess vs threshold plot used for optimal threshold selection. The chosen threshold (2.93% loss, 97.1th percentile) represents the point where the mean excess stabilizes, indicating the onset of extreme behavior.*
 
 ---
